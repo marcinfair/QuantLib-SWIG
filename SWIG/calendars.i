@@ -248,7 +248,7 @@ namespace QuantLib {
 
     class Poland : public Calendar {
       public:
-        enum Market { Settlement, WSE };
+        enum Market { Settlement, WSE, Fiscal };
         Poland(Market m = Settlement);
     };
 
@@ -299,7 +299,12 @@ namespace QuantLib {
         Taiwan(Market m = TSEC);
     };
 
-    class TARGET : public Calendar {};
+    class TARGET : public Calendar {
+      public:
+        enum Market { Settlement, Fiscal };
+        TARGET(Market m = Settlement);
+    };
+
     class Thailand : public Calendar {};
     class Turkey : public Calendar {};
 

@@ -709,6 +709,8 @@ class Date {
     }
     static Date endOfMonth(const Date&);
     static bool isEndOfMonth(const Date&);
+    static Date endOfQuarter(const Date&);
+    static bool isEndOfQuarter(const Date&);
     static Date nextWeekday(const Date&, Weekday);
     static Date nthWeekday(Size n, Weekday, Month m, Year y);
     Date operator+(BigInteger days) const;
